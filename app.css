@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+#timer {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer h1 {
+    font-size: 40px;
+}
+
+#timer span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#game {
+    padding: 50px;
+    width: 100%;
+    margin: auto;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.question img {
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.answers {
+    display: flex;
+    gap: 50px;
+}
+
+.answer {
+    font-size: 20px;
+    font-weight: 600;
+    transition-duration: 0.25s;
+}
+
+.answer:hover {
+    font-size: 25px;
+    cursor: pointer;
+    color: red;
+    color: rgb(255, 165, 0);
+    text-shadow: 2px 4px 4px rgba(255, 165, 0, 0.5);
+}
+
+#score {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#score h1 {
+    font-size: 40px;
+}
+
+#score span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.end {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+#message {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#fire {
+    animation: fireText 0.1s infinite;
+}
+
+@keyframes fireText {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
